@@ -1,0 +1,9 @@
+key.txt
+.env
+*.key
+global.ini
+global.ini.en.bak
+sc_turkce_cache.json
+karsilastirma.txt
+ornek*.txt
+__pycache__/
