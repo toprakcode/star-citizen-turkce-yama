@@ -5,8 +5,8 @@ Star Citizen'ın arayüz, görev, sözleşme ve hikaye metinlerini Türkçeye ç
 > Resmi olmayan bir hayran projesidir. Cloud Imperium Games ile bağlantısı yoktur. Oyun metinleri ve marka CIG'e aittir.
 
 ## Hızlı kurulum (çeviri hazır, ücretsiz)
-1. **Releases** sayfasından en son sürümdeki `global.ini` dosyasını indir. Sürüm numarası oyunun sürümüyle (örn. 4.10.2) eşleşmeli.
-2. `global.ini` ile `kur.bat` dosyasını **aynı klasöre** koy. (`kur.bat` bu depoda.)
+1. [**Son sürümü indir**](https://github.com/toprakcode/star-citizen-turkce-yama/releases/latest) sayfasındaki `global.ini` ve `kur.bat` dosyalarını indir. Sürüm numarası oyunun sürümüyle (örn. 4.10.2) eşleşmeli.
+2. İkisini **aynı klasöre** koy.
 3. `kur.bat` dosyasına çift tıkla, Star Citizen'ın **LIVE klasörünü** yaz (örn. `S:\StarCitizen\LIVE`, içinde `Data.p4k` olan klasör).
 4. Oyunu tamamen kapatıp yeniden aç. Oyundaki dil ayarı **English** kalsın.
 
