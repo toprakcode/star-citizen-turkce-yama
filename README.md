@@ -29,7 +29,7 @@ python sc_turkce.py --source global.ini --game "S:\StarCitizen\LIVE" --latin1 --
 - **API anahtarını asla bu depoya yükleme.** `.gitignore` bunu engellemeye çalışır ama kontrol sende.
 
 ## Topluluk ve destek
-Hata bildirimi, öneri ve sohbet için Discord sunucumuza katıl: **https://discord.gg/E5befwquPV**
+Hata bildirimi, öneri ve diğer star citizen türk oyuncuları ile topluluk içinde kalmak için Discord sunucumuza katıl: **https://discord.gg/E5befwquPV**
 
 ## Katkı
 Hatalı çeviri, terim önerisi ve iyileştirmeler için Issue ya da Pull Request açabilirsin.
