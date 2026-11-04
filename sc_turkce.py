@@ -102,6 +102,7 @@ def main():
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--ascii", action="store_true", help="Turkce harfleri sadelestir (yazi tipi sorunu olursa)")
     ap.add_argument("--latin1", action="store_true", help="oneri: sadece s,g,i harflerini sadelestir (c,o,u kalir)")
+    ap.add_argument("--short-ascii", type=int, default=0, metavar="N", help="N karakterden kisa satirlarda (cogu buyuk harfli etiket) tum harfleri sadelestir")
     ap.add_argument("--offline", action="store_true", help="API kullanma, sadece onbellekten dosyayi yeniden yaz")
     ap.add_argument("--estimate", action="store_true", help="sadece maliyet tahmini yap")
     a = ap.parse_args()
@@ -186,7 +187,10 @@ def main():
             lines.append(v)
         else:
             t = cache.get(h(v), v)
-            t = t.translate(ASCII_MAP) if a.ascii else (t.translate(LATIN1_MAP) if a.latin1 else t)
+            if a.ascii or (a.short_ascii and len(t) <= a.short_ascii):
+                t = t.translate(ASCII_MAP)
+            elif a.latin1:
+                t = t.translate(LATIN1_MAP)
             lines.append(f"{k}={t}")
     with open(out, "w", encoding="utf-8-sig", newline="") as f:
         f.write("\r\n".join(lines) + "\r\n")
