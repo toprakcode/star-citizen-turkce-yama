@@ -28,6 +28,7 @@ python sc_turkce.py --source global.ini --game "S:\StarCitizen\LIVE" --latin1 --
 - `--estimate` maliyet tahmini verir, `--limit 150` küçük deneme yapar, `--offline` API kullanmadan dosyayı yeniden yazar.
 - **API anahtarını asla bu depoya yükleme.** `.gitignore` bunu engellemeye çalışır ama kontrol sende.
 
+## Seyir Defteri
 Ayrıca seyir defteri ile oyunundaki ilerlemeleri kaydetmek istersen:https://github.com/toprakcode/star-citizen-seyir-defteri
 
 ## Topluluk ve destek
